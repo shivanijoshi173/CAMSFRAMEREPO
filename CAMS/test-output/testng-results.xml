@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5013" started-at="2021-12-10T17:08:29 IST" finished-at="2021-12-10T17:08:34 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5013" started-at="2021-12-10T17:08:29 IST" finished-at="2021-12-10T17:08:34 IST">
+      <class name="testscripts.TC_02_EnterFirstName">
+        <test-method status="PASS" signature="connectDB()[pri:0, instance:testscripts.TC_02_EnterFirstName@376b4233]" name="connectDB" is-config="true" duration-ms="4" started-at="2021-12-10T17:08:29 IST" finished-at="2021-12-10T17:08:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectDB -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testscripts.TC_02_EnterFirstName@376b4233]" name="launchBrowser" is-config="true" duration-ms="2899" started-at="2021-12-10T17:08:29 IST" finished-at="2021-12-10T17:08:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="loginToApp()[pri:0, instance:testscripts.TC_02_EnterFirstName@376b4233]" name="loginToApp" is-config="true" duration-ms="1" started-at="2021-12-10T17:08:32 IST" finished-at="2021-12-10T17:08:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method status="PASS" signature="enterFirstName()[pri:0, instance:testscripts.TC_02_EnterFirstName@376b4233]" name="enterFirstName" duration-ms="2072" started-at="2021-12-10T17:08:32 IST" finished-at="2021-12-10T17:08:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterFirstName -->
+        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:testscripts.TC_02_EnterFirstName@376b4233]" name="logoutofApp" is-config="true" duration-ms="1" started-at="2021-12-10T17:08:34 IST" finished-at="2021-12-10T17:08:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutofApp -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscripts.TC_02_EnterFirstName@376b4233]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2021-12-10T17:08:34 IST" finished-at="2021-12-10T17:08:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="closeDB()[pri:0, instance:testscripts.TC_02_EnterFirstName@376b4233]" name="closeDB" is-config="true" duration-ms="0" started-at="2021-12-10T17:08:34 IST" finished-at="2021-12-10T17:08:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDB -->
+      </class> <!-- testscripts.TC_02_EnterFirstName -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
