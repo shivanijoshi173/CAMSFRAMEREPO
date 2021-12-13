@@ -1,5 +1,6 @@
 package com.cams.ObjectRepository;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,10 +14,11 @@ public class OpenAccountPage
 	}
 	
 	//find all the webelement by @findBy,@findBys
+	
 	@FindBy(xpath ="//input[@formcontrolname='name']")
 	private WebElement firstname;
 
-	@FindBy(xpath="//div[@class='mat-form-field-infix ng-tns-c87-5']")
+	@FindBy(xpath="//input[@placeholder='PAN']")
 	private WebElement pan;
 	
 	@FindBy(xpath="//input[@formcontrolname='dob']")
@@ -27,15 +29,29 @@ public class OpenAccountPage
 	
 	@FindBy(xpath="//input[@formcontrolname='mobile']")
 	private WebElement mob;
+	
+	@FindBy(xpath="//span[text()=' OPEN NEW ACCOUNT']")
+	private WebElement opennewaccountbutton;
 
+	@FindBy(xpath="//mat-error[text()=' PAN entered is incorrect ']")
+	private WebElement errormsg;
 	
 	//provied getter method
 	public WebElement getFirstname() {
 		return firstname;
 	}
 
+	public WebElement getErrormsg() 
+	{
+		return errormsg;
+	}
+
 	public WebElement getPan() {
 		return pan;
+	}
+
+	public WebElement getOpennewaccountbutton() {
+		return opennewaccountbutton;
 	}
 
 	public WebElement getDob() {
@@ -51,10 +67,24 @@ public class OpenAccountPage
 	}
 	
 	//business logic
-	public void firstName(String name) {
+	public WebElement FirstName(String name)
+	{
 		 firstname.sendKeys(name);
+		return firstname;
 	}
 	
+	public boolean openaccbutton()
+	{
+		return opennewaccountbutton.isEnabled();
+	}
 	
+	public WebElement pantext(String pannum) {
+		pan.sendKeys(pannum,Keys.TAB);
+		return pan;
+	}
+	public String captureerrormsg()
+	{
+		return errormsg.getText();
+	}
 
 }

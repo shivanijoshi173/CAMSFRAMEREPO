@@ -1,20 +1,37 @@
 package testscripts;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.cams.GenericLibrary.BaseClass;
+import com.cams.GenericLibrary.ExcelUtility;
+import com.cams.ObjectRepository.HomePage;
+import com.cams.ObjectRepository.OpenAccountPage;
 
 
 
-public class TC_08_FirstNameWithAllLettersInUpperCase extends BaseClass {
+public class TC_08_FirstNameWithAllLettersInUpperCase extends BaseClass 
+{
 	@Test
-	public void enterFirstName() throws Throwable {
-		driver.findElement(By.xpath("//span[contains(text(),' Invest Now ')]/..")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@formcontrolname='name']")).sendKeys("ABCDEF");
-		driver.close();
-		
+	public void firstNameWithAllLettersInUpperCaseTest() throws Throwable 
+	{ExcelUtility ex=new ExcelUtility();
+	String name=ex.getExcelData("Sheet1", 7, 0);
+	String accdata=name;
+	
+	HomePage hp=new HomePage(driver);
+	hp.clickoninvestnow();
+	
+	OpenAccountPage op= new OpenAccountPage(driver);
+	WebElement fn=op.FirstName(name);
+	String expdata=fn.getAttribute("value");
+	
+	SoftAssert s=new SoftAssert();
+	s.assertTrue(accdata.contains(expdata));
+	s.assertAll();
+	System.out.println("Actual data:-"+accdata);
+	System.out.println("Expected data:-"+expdata);
+	System.out.println("test case is pass");
 	}
 }
 

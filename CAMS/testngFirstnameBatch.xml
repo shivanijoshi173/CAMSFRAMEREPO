@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+	<listener class-name="com.cams.GenericLibrary.Listener"/>
+</listeners>
+  <test thread-count="5" name="Test" preserve-order="true">
+    <classes>
+      <class name="testscripts.TC_01_ClickOnInvestnow"/>
+      <class name="testscripts.TC_10_CreateAccWithoutEnteringFirstName"/>
+      <class name="testscripts.TC_02_EnterFirstName"/>
+      <class name="testscripts.TC_03_EnterFirstNameMoreThan32Character"/>
+      <class name="testscripts.TC_06_EnterFirstNameWithSpaces"/>
+      <class name="testscripts.TC_07_FirstNameWithFirstLetterInUpperCase"/>
+      <class name="testscripts.TC_04_EnterFirstNameWithAlphanumericValue"/>
+      <class name="testscripts.TC_09_FirstNameWithAllLettersInLowerCase"/>
+      <class name="testscripts.TC_08_FirstNameWithAllLettersInUpperCase"/>
+      <class name="testscripts.TC_05_EnterFirstNameWithSpecialChar"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

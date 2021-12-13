@@ -1,25 +1,30 @@
 package testscripts;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.cams.GenericLibrary.BaseClass;
+import com.cams.ObjectRepository.HomePage;
+import com.cams.ObjectRepository.OpenAccountPage;
 
-
-
-public class TC_10_CreateAccWithoutEnteringFirstName extends BaseClass{
+public class TC_10_CreateAccWithoutEnteringFirstName extends BaseClass
+{
 	@Test
-	public void enterFirstName() throws Throwable {
+	public void CreateAccWithoutEnteringFirstNameTest() throws Throwable 
+	{
 		System.out.println("successfully entered");
+		HomePage hp=new HomePage(driver);
+		hp.clickoninvestnow();
 		
-//		LoginPage lp=new LoginPage(driver);
-//		lp.clickoninvestnow();
-		driver.findElement(By.xpath("//span[contains(text(),' Invest Now ')]/..")).click();
-		Thread.sleep(2000);
-		boolean button = driver.findElement(By.xpath("//span[text()=' OPEN NEW ACCOUNT']")).isEnabled();
+		OpenAccountPage op= new OpenAccountPage(driver);
+		boolean button = op.openaccbutton();
 		System.out.println(button);
 		
-		driver.close();
+		SoftAssert s=new SoftAssert();
+		s.assertEquals(button, true);
+		s.assertAll();
+		System.out.println("test case is pass");
+		
 	}
 
 }

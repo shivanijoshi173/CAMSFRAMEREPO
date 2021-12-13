@@ -51,18 +51,16 @@ public class Listener implements ITestListener
 	
 	public void onStart(ITestContext context) {
 
-		ExtentHtmlReporter reporter=new ExtentHtmlReporter(System.getProperty("user.dir")+"/ExtentReportsSDET21/ExtentReports"+jLib.getrandomNum()+".html");
-		reporter.config().setDocumentTitle("SDET21");
+		ExtentHtmlReporter reporter=new ExtentHtmlReporter(System.getProperty("user.dir")+"/ExtentReports/ExtentReports"+jLib.getrandomNum()+".html");
+		reporter.config().setDocumentTitle("CAMS");
 		reports=new ExtentReports();
 		reports.attachReporter(reporter);
 
-		reports.setSystemInfo("BuildNo", "5.1");
+		reports.setSystemInfo("BuildNo", "1");
 		reports.setSystemInfo("Env", "pre-prod");
 		reports.setSystemInfo("PlatForm", "Windows");
-		reports.setSystemInfo("Browser Version", "Chrome-93");
+		reports.setSystemInfo("Browser Version", "Chrome-96");
 	}
-
-
 
 	public void onFinish(ITestContext context) {
 		reports.flush();

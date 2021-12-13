@@ -16,8 +16,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-import com.cams.ObjectRepository.HomePage;
-
 public class BaseClass {
 	public DatabaseUtility dLib = new DatabaseUtility();
 	public JsonUtility jsonLib = new JsonUtility();
@@ -33,9 +31,9 @@ public class BaseClass {
 		System.out.println("=======MakeDBConnection========");
 	}
 
-	// @Parameters("BROWSER")
-	@BeforeClass(groups = { "SmokeSuite", "RegresionSuite" })
-	public void launchBrowser(/* String BROWSER */ ) throws Throwable {
+	
+	@BeforeClass
+	public void launchBrowser() throws Throwable {
 		System.out.println("========launchBrowser==========");
 		String BROWSER = jsonLib.readDataFromJSON("browser");
 		String URL = jsonLib.readDataFromJSON("url");
@@ -53,30 +51,29 @@ public class BaseClass {
 		staticdriver = driver;
 	}
 
-	@BeforeMethod(groups = { "SmokeSuite", "RegresionSuite" })
+	@BeforeMethod
 	public void loginToApp() throws Throwable {
 		System.out.println("=====LoginApp======");
-	
-
+		
 		
 	}
 
-	@AfterMethod(groups = { "SmokeSuite", "RegresionSuite" })
+	@AfterMethod
 	public void logoutofApp() {
 		System.out.println("======logoutOfApp");
 
 		
 	}
 
-	@AfterClass(groups = { "SmokeSuite", "RegresionSuite" })
+	@AfterClass
 	public void closeBrowser() {
 		System.out.println("========closeBrowser========");
-	//	driver.close();
+		driver.close();
 	}
 
-	@AfterSuite(groups = { "SmokeSuite", "RegresionSuite" })
+	@AfterSuite
 	public void closeDB() throws Throwable {
-		// dLib.closeDb();
+		 dLib.closeDb();
 		System.out.println("==============close=============");
 	}
 
