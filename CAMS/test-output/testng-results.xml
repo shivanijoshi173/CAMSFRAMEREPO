@@ -1,86 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="18" total="28" passed="9">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="64969" started-at="2021-12-13T17:34:04 IST" finished-at="2021-12-13T17:35:09 IST">
+  <suite name="Default suite" duration-ms="8454" started-at="2021-12-14T13:00:24 IST" finished-at="2021-12-14T13:00:32 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="64969" started-at="2021-12-13T17:34:04 IST" finished-at="2021-12-13T17:35:09 IST">
-      <class name="testscripts.TC_09_FirstNameWithAllLettersInLowerCase">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testscripts.TC_09_FirstNameWithAllLettersInLowerCase@4ae82894]" name="launchBrowser" is-config="true" duration-ms="3709" started-at="2021-12-13T17:34:52 IST" finished-at="2021-12-13T17:34:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="FirstNameWithAllLettersInLowerCaseTest()[pri:0, instance:testscripts.TC_09_FirstNameWithAllLettersInLowerCase@4ae82894]" name="FirstNameWithAllLettersInLowerCaseTest" duration-ms="1335" started-at="2021-12-13T17:34:56 IST" finished-at="2021-12-13T17:34:57 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FirstNameWithAllLettersInLowerCaseTest -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:testscripts.TC_09_FirstNameWithAllLettersInLowerCase@4ae82894]" name="loginToApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:34:56 IST" finished-at="2021-12-13T17:34:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:testscripts.TC_09_FirstNameWithAllLettersInLowerCase@4ae82894]" name="logoutofApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:34:57 IST" finished-at="2021-12-13T17:34:57 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutofApp -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscripts.TC_09_FirstNameWithAllLettersInLowerCase@4ae82894]" name="closeBrowser" is-config="true" duration-ms="642" started-at="2021-12-13T17:34:57 IST" finished-at="2021-12-13T17:34:58 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testscripts.TC_09_FirstNameWithAllLettersInLowerCase -->
-      <class name="testscripts.TC_07_FirstNameWithFirstLetterInUpperCase">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testscripts.TC_07_FirstNameWithFirstLetterInUpperCase@103f852]" name="launchBrowser" is-config="true" duration-ms="3564" started-at="2021-12-13T17:34:41 IST" finished-at="2021-12-13T17:34:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:testscripts.TC_07_FirstNameWithFirstLetterInUpperCase@103f852]" name="loginToApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:34:45 IST" finished-at="2021-12-13T17:34:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="FirstNameWithFirstLetterInUpperCaseTest()[pri:0, instance:testscripts.TC_07_FirstNameWithFirstLetterInUpperCase@103f852]" name="FirstNameWithFirstLetterInUpperCaseTest" duration-ms="1328" started-at="2021-12-13T17:34:45 IST" finished-at="2021-12-13T17:34:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FirstNameWithFirstLetterInUpperCaseTest -->
-        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:testscripts.TC_07_FirstNameWithFirstLetterInUpperCase@103f852]" name="logoutofApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:34:46 IST" finished-at="2021-12-13T17:34:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutofApp -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscripts.TC_07_FirstNameWithFirstLetterInUpperCase@103f852]" name="closeBrowser" is-config="true" duration-ms="681" started-at="2021-12-13T17:34:46 IST" finished-at="2021-12-13T17:34:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testscripts.TC_07_FirstNameWithFirstLetterInUpperCase -->
-      <class name="testscripts.TC_01_ClickOnInvestnow">
-        <test-method status="PASS" signature="connectDB()[pri:0, instance:testscripts.TC_01_ClickOnInvestnow@fe18270]" name="connectDB" is-config="true" duration-ms="7" started-at="2021-12-13T17:34:04 IST" finished-at="2021-12-13T17:34:04 IST">
+    <test name="Default test" duration-ms="8454" started-at="2021-12-14T13:00:24 IST" finished-at="2021-12-14T13:00:32 IST">
+      <class name="testscripts.TC_18_CreateAccWithoutEnteringDOB">
+        <test-method status="PASS" signature="connectDB()[pri:0, instance:testscripts.TC_18_CreateAccWithoutEnteringDOB@5579bb86]" name="connectDB" is-config="true" duration-ms="16" started-at="2021-12-14T13:00:24 IST" finished-at="2021-12-14T13:00:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectDB -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testscripts.TC_01_ClickOnInvestnow@fe18270]" name="launchBrowser" is-config="true" duration-ms="5076" started-at="2021-12-13T17:34:05 IST" finished-at="2021-12-13T17:34:10 IST">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testscripts.TC_18_CreateAccWithoutEnteringDOB@5579bb86]" name="launchBrowser" is-config="true" duration-ms="4656" started-at="2021-12-14T13:00:24 IST" finished-at="2021-12-14T13:00:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:testscripts.TC_01_ClickOnInvestnow@fe18270]" name="loginToApp" is-config="true" duration-ms="1" started-at="2021-12-13T17:34:10 IST" finished-at="2021-12-13T17:34:10 IST">
+        <test-method status="PASS" signature="loginToApp()[pri:0, instance:testscripts.TC_18_CreateAccWithoutEnteringDOB@5579bb86]" name="loginToApp" is-config="true" duration-ms="0" started-at="2021-12-14T13:00:28 IST" finished-at="2021-12-14T13:00:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="ClickOnInvestnowTest()[pri:0, instance:testscripts.TC_01_ClickOnInvestnow@fe18270]" name="ClickOnInvestnowTest" duration-ms="146" started-at="2021-12-13T17:34:10 IST" finished-at="2021-12-13T17:34:10 IST">
+        <test-method status="PASS" signature="CreateAccWithoutEnteringDOBTest()[pri:0, instance:testscripts.TC_18_CreateAccWithoutEnteringDOB@5579bb86]" name="CreateAccWithoutEnteringDOBTest" duration-ms="3771" started-at="2021-12-14T13:00:28 IST" finished-at="2021-12-14T13:00:32 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickOnInvestnowTest -->
-        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:testscripts.TC_01_ClickOnInvestnow@fe18270]" name="logoutofApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:34:10 IST" finished-at="2021-12-13T17:34:10 IST">
+        </test-method> <!-- CreateAccWithoutEnteringDOBTest -->
+        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:testscripts.TC_18_CreateAccWithoutEnteringDOB@5579bb86]" name="logoutofApp" is-config="true" duration-ms="0" started-at="2021-12-14T13:00:32 IST" finished-at="2021-12-14T13:00:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutofApp -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscripts.TC_01_ClickOnInvestnow@fe18270]" name="closeBrowser" is-config="true" duration-ms="411" started-at="2021-12-13T17:34:10 IST" finished-at="2021-12-13T17:34:10 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscripts.TC_18_CreateAccWithoutEnteringDOB@5579bb86]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2021-12-14T13:00:32 IST" finished-at="2021-12-14T13:00:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="FAIL" signature="closeDB()[pri:0, instance:testscripts.TC_01_ClickOnInvestnow@fe18270]" name="closeDB" is-config="true" duration-ms="0" started-at="2021-12-13T17:35:10 IST" finished-at="2021-12-13T17:35:10 IST">
+        <test-method status="FAIL" signature="closeDB()[pri:0, instance:testscripts.TC_18_CreateAccWithoutEnteringDOB@5579bb86]" name="closeDB" is-config="true" duration-ms="0" started-at="2021-12-14T13:00:32 IST" finished-at="2021-12-14T13:00:32 IST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at com.cams.GenericLibrary.DatabaseUtility.closeDb(DatabaseUtility.java:28)
-at com.cams.GenericLibrary.BaseClass.closeDB(BaseClass.java:76)
+at com.cams.GenericLibrary.BaseClass.closeDB(BaseClass.java:73)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -106,197 +62,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDB -->
-      </class> <!-- testscripts.TC_01_ClickOnInvestnow -->
-      <class name="testscripts.TC_08_FirstNameWithAllLettersInUpperCase">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testscripts.TC_08_FirstNameWithAllLettersInUpperCase@543788f3]" name="launchBrowser" is-config="true" duration-ms="3759" started-at="2021-12-13T17:34:58 IST" finished-at="2021-12-13T17:35:02 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="firstNameWithAllLettersInUpperCaseTest()[pri:0, instance:testscripts.TC_08_FirstNameWithAllLettersInUpperCase@543788f3]" name="firstNameWithAllLettersInUpperCaseTest" duration-ms="1368" started-at="2021-12-13T17:35:02 IST" finished-at="2021-12-13T17:35:03 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- firstNameWithAllLettersInUpperCaseTest -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:testscripts.TC_08_FirstNameWithAllLettersInUpperCase@543788f3]" name="loginToApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:35:02 IST" finished-at="2021-12-13T17:35:02 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:testscripts.TC_08_FirstNameWithAllLettersInUpperCase@543788f3]" name="logoutofApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:35:03 IST" finished-at="2021-12-13T17:35:03 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutofApp -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscripts.TC_08_FirstNameWithAllLettersInUpperCase@543788f3]" name="closeBrowser" is-config="true" duration-ms="692" started-at="2021-12-13T17:35:03 IST" finished-at="2021-12-13T17:35:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testscripts.TC_08_FirstNameWithAllLettersInUpperCase -->
-      <class name="testscripts.TC_02_EnterFirstName">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testscripts.TC_02_EnterFirstName@281e3708]" name="launchBrowser" is-config="true" duration-ms="4848" started-at="2021-12-13T17:34:20 IST" finished-at="2021-12-13T17:34:24 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:testscripts.TC_02_EnterFirstName@281e3708]" name="loginToApp" is-config="true" duration-ms="1" started-at="2021-12-13T17:34:24 IST" finished-at="2021-12-13T17:34:24 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method status="FAIL" signature="enterFirstNameTest()[pri:0, instance:testscripts.TC_02_EnterFirstName@281e3708]" name="enterFirstNameTest" duration-ms="777" started-at="2021-12-13T17:34:24 IST" finished-at="2021-12-13T17:34:25 IST">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.cams.GenericLibrary.ExcelUtility.getExcelData(ExcelUtility.java:23)
-at testscripts.TC_02_EnterFirstName.enterFirstNameTest(TC_02_EnterFirstName.java:25)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterFirstNameTest -->
-        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:testscripts.TC_02_EnterFirstName@281e3708]" name="logoutofApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:34:26 IST" finished-at="2021-12-13T17:34:26 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutofApp -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscripts.TC_02_EnterFirstName@281e3708]" name="closeBrowser" is-config="true" duration-ms="205" started-at="2021-12-13T17:34:26 IST" finished-at="2021-12-13T17:34:26 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testscripts.TC_02_EnterFirstName -->
-      <class name="testscripts.TC_05_EnterFirstNameWithSpecialChar">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testscripts.TC_05_EnterFirstNameWithSpecialChar@6d3af739]" name="launchBrowser" is-config="true" duration-ms="3964" started-at="2021-12-13T17:35:04 IST" finished-at="2021-12-13T17:35:08 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:testscripts.TC_05_EnterFirstNameWithSpecialChar@6d3af739]" name="loginToApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:35:08 IST" finished-at="2021-12-13T17:35:08 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="EnterFirstNameWithSpecialCharTest()[pri:0, instance:testscripts.TC_05_EnterFirstNameWithSpecialChar@6d3af739]" name="EnterFirstNameWithSpecialCharTest" duration-ms="1281" started-at="2021-12-13T17:35:08 IST" finished-at="2021-12-13T17:35:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnterFirstNameWithSpecialCharTest -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscripts.TC_05_EnterFirstNameWithSpecialChar@6d3af739]" name="closeBrowser" is-config="true" duration-ms="282" started-at="2021-12-13T17:35:09 IST" finished-at="2021-12-13T17:35:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:testscripts.TC_05_EnterFirstNameWithSpecialChar@6d3af739]" name="logoutofApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:35:09 IST" finished-at="2021-12-13T17:35:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutofApp -->
-      </class> <!-- testscripts.TC_05_EnterFirstNameWithSpecialChar -->
-      <class name="testscripts.TC_04_EnterFirstNameWithAlphanumericValue">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testscripts.TC_04_EnterFirstNameWithAlphanumericValue@587c290d]" name="launchBrowser" is-config="true" duration-ms="3874" started-at="2021-12-13T17:34:47 IST" finished-at="2021-12-13T17:34:50 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="enterFirstName()[pri:0, instance:testscripts.TC_04_EnterFirstNameWithAlphanumericValue@587c290d]" name="enterFirstName" duration-ms="1296" started-at="2021-12-13T17:34:50 IST" finished-at="2021-12-13T17:34:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterFirstName -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:testscripts.TC_04_EnterFirstNameWithAlphanumericValue@587c290d]" name="loginToApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:34:50 IST" finished-at="2021-12-13T17:34:50 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:testscripts.TC_04_EnterFirstNameWithAlphanumericValue@587c290d]" name="logoutofApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:34:52 IST" finished-at="2021-12-13T17:34:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutofApp -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscripts.TC_04_EnterFirstNameWithAlphanumericValue@587c290d]" name="closeBrowser" is-config="true" duration-ms="673" started-at="2021-12-13T17:34:52 IST" finished-at="2021-12-13T17:34:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testscripts.TC_04_EnterFirstNameWithAlphanumericValue -->
-      <class name="testscripts.TC_06_EnterFirstNameWithSpaces">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testscripts.TC_06_EnterFirstNameWithSpaces@1f021e6c]" name="launchBrowser" is-config="true" duration-ms="4221" started-at="2021-12-13T17:34:35 IST" finished-at="2021-12-13T17:34:39 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="EnterFirstNameWithSpacesTest()[pri:0, instance:testscripts.TC_06_EnterFirstNameWithSpaces@1f021e6c]" name="EnterFirstNameWithSpacesTest" duration-ms="1313" started-at="2021-12-13T17:34:39 IST" finished-at="2021-12-13T17:34:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnterFirstNameWithSpacesTest -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:testscripts.TC_06_EnterFirstNameWithSpaces@1f021e6c]" name="loginToApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:34:39 IST" finished-at="2021-12-13T17:34:39 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscripts.TC_06_EnterFirstNameWithSpaces@1f021e6c]" name="closeBrowser" is-config="true" duration-ms="704" started-at="2021-12-13T17:34:40 IST" finished-at="2021-12-13T17:34:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:testscripts.TC_06_EnterFirstNameWithSpaces@1f021e6c]" name="logoutofApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:34:40 IST" finished-at="2021-12-13T17:34:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutofApp -->
-      </class> <!-- testscripts.TC_06_EnterFirstNameWithSpaces -->
-      <class name="testscripts.TC_10_CreateAccWithoutEnteringFirstName">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testscripts.TC_10_CreateAccWithoutEnteringFirstName@68ceda24]" name="launchBrowser" is-config="true" duration-ms="3900" started-at="2021-12-13T17:34:10 IST" finished-at="2021-12-13T17:34:14 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:testscripts.TC_10_CreateAccWithoutEnteringFirstName@68ceda24]" name="loginToApp" is-config="true" duration-ms="1" started-at="2021-12-13T17:34:14 IST" finished-at="2021-12-13T17:34:14 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="CreateAccWithoutEnteringFirstNameTest()[pri:0, instance:testscripts.TC_10_CreateAccWithoutEnteringFirstName@68ceda24]" name="CreateAccWithoutEnteringFirstNameTest" duration-ms="1193" started-at="2021-12-13T17:34:14 IST" finished-at="2021-12-13T17:34:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateAccWithoutEnteringFirstNameTest -->
-        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:testscripts.TC_10_CreateAccWithoutEnteringFirstName@68ceda24]" name="logoutofApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:34:15 IST" finished-at="2021-12-13T17:34:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutofApp -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscripts.TC_10_CreateAccWithoutEnteringFirstName@68ceda24]" name="closeBrowser" is-config="true" duration-ms="4213" started-at="2021-12-13T17:34:15 IST" finished-at="2021-12-13T17:34:20 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testscripts.TC_10_CreateAccWithoutEnteringFirstName -->
-      <class name="testscripts.TC_03_EnterFirstNameMoreThan32Character">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testscripts.TC_03_EnterFirstNameMoreThan32Character@35a50a4c]" name="launchBrowser" is-config="true" duration-ms="6836" started-at="2021-12-13T17:34:26 IST" finished-at="2021-12-13T17:34:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:testscripts.TC_03_EnterFirstNameMoreThan32Character@35a50a4c]" name="loginToApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:34:33 IST" finished-at="2021-12-13T17:34:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="EnterFirstNameMoreThan32CharacterTest()[pri:0, instance:testscripts.TC_03_EnterFirstNameMoreThan32Character@35a50a4c]" name="EnterFirstNameMoreThan32CharacterTest" duration-ms="1488" started-at="2021-12-13T17:34:33 IST" finished-at="2021-12-13T17:34:34 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnterFirstNameMoreThan32CharacterTest -->
-        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:testscripts.TC_03_EnterFirstNameMoreThan32Character@35a50a4c]" name="logoutofApp" is-config="true" duration-ms="0" started-at="2021-12-13T17:34:34 IST" finished-at="2021-12-13T17:34:34 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutofApp -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscripts.TC_03_EnterFirstNameMoreThan32Character@35a50a4c]" name="closeBrowser" is-config="true" duration-ms="504" started-at="2021-12-13T17:34:34 IST" finished-at="2021-12-13T17:34:35 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testscripts.TC_03_EnterFirstNameMoreThan32Character -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- testscripts.TC_18_CreateAccWithoutEnteringDOB -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -1,23 +1,38 @@
 package testscripts;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.cams.GenericLibrary.BaseClass;
-
-
+import com.cams.GenericLibrary.ExcelUtility;
+import com.cams.ObjectRepository.HomePage;
+import com.cams.ObjectRepository.OpenAccountPage;
 
 public class TC_16_PanTextFirldWithSpaces extends BaseClass
 {
 	@Test
-	   public void enterFirstName() throws Throwable {
-		driver.findElement(By.xpath("//span[contains(text(),' Invest Now ')]/..")).click();
+	   public void PanTextFirldWithSpacesTest() throws Throwable 
+	{
+		ExcelUtility ex=new ExcelUtility();
+		//input data to the pan textfield
+		String pannum = ex.getExcelData("Sheet1", 6, 1);
+		String accdata=pannum; 
+		
+		HomePage hp=new HomePage(driver);
+		hp.clickoninvestnow();
+		
+		OpenAccountPage op=new OpenAccountPage(driver);
+		op.pantext(pannum);
+	
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@formcontrolname='pan']")).sendKeys("BLA  67  7");
-//	String msg = driver.findElement(By.xpath("//*[@class='mat-error ng-tns-c87-5 ng-star-inserted' and @id='mat-error-0']")).getText();
-//	System.out.println(msg);
-		Thread.sleep(1000);
-		driver.close();
+		String msg = op.captureerrormsg();
+		SoftAssert s=new SoftAssert();
+		s.assertTrue(msg.contains("PAN entered is incorrect"));
+		s.assertAll();
+		
+		System.out.println("Actual data:-"+accdata);
+		System.out.println("got this message for invalid input = "+msg);
+		System.out.println(getClass().getName()+"\n"+"this test case is passed");
 	}
 
 }

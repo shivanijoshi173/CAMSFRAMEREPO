@@ -21,9 +21,40 @@ public class OpenAccountPage
 	@FindBy(xpath="//input[@placeholder='PAN']")
 	private WebElement pan;
 	
-	@FindBy(xpath="//input[@formcontrolname='dob']")
+	@FindBy(xpath="//*[name()='svg' and @class='mat-datepicker-toggle-default-icon ng-star-inserted']")
 	private WebElement dob;
 	
+	@FindBy(xpath="//div[@class='mat-calendar-arrow']")
+	private WebElement arrow;
+	
+	@FindBy(xpath="//button[@aria-label='Previous 20 years']")
+	private WebElement previousarrow;
+	
+	@FindBy(xpath="(//table[@class='mat-calendar-table']/tbody/tr/td[*])[3]")
+	private WebElement year;
+	
+	@FindBy(xpath="(//table[@class='mat-calendar-table']/tbody/tr/td[*])[5]")
+	private WebElement month;
+	
+	@FindBy(xpath="(//table[@class='mat-calendar-table']/tbody/tr/td[*])[5]")
+	private WebElement date;
+	
+	public WebElement getDate() {
+		return date;
+	}
+
+	public WebElement getMonth() {
+		return month;
+	}
+
+	public WebElement getyear() {
+		return year;
+	}
+
+	public WebElement getArrow() {
+		return arrow;
+	}
+
 	@FindBy(xpath="//input[@formcontrolname='email']")
 	private WebElement email;
 	
@@ -36,6 +67,10 @@ public class OpenAccountPage
 	@FindBy(xpath="//mat-error[text()=' PAN entered is incorrect ']")
 	private WebElement errormsg;
 	
+	public WebElement getPreviousarrow() {
+		return previousarrow;
+	}
+
 	//provied getter method
 	public WebElement getFirstname() {
 		return firstname;
@@ -87,4 +122,14 @@ public class OpenAccountPage
 		return errormsg.getText();
 	}
 
+	public void dobtext() throws InterruptedException
+	{
+		dob.click();
+		Thread.sleep(2000);
+		arrow.click();
+		previousarrow.click();
+		year.click();
+		month.click();
+		date.click();
+	}
 }

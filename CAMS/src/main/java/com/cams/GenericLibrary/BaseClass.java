@@ -25,13 +25,12 @@ public class BaseClass {
 	public WebDriver driver;
 	public static WebDriver staticdriver;
 
-	@BeforeSuite(groups = { "SmokeSuite", "RegresionSuite" })
+	@BeforeSuite
 	public void connectDB() throws Throwable {
 		// dLib.connectToDatabase();
 		System.out.println("=======MakeDBConnection========");
 	}
 
-	
 	@BeforeClass
 	public void launchBrowser() throws Throwable {
 		System.out.println("========launchBrowser==========");
@@ -54,26 +53,24 @@ public class BaseClass {
 	@BeforeMethod
 	public void loginToApp() throws Throwable {
 		System.out.println("=====LoginApp======");
-		
-		
+
 	}
 
 	@AfterMethod
 	public void logoutofApp() {
 		System.out.println("======logoutOfApp");
 
-		
 	}
 
 	@AfterClass
 	public void closeBrowser() {
 		System.out.println("========closeBrowser========");
-		driver.close();
+		// driver.close();
 	}
 
 	@AfterSuite
 	public void closeDB() throws Throwable {
-		 dLib.closeDb();
+		dLib.closeDb();
 		System.out.println("==============close=============");
 	}
 
