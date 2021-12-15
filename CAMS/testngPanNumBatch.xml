@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-<listeners>
-	<listener class-name="com.cams.GenericLibrary.Listener"/>
-</listeners>
-  <test thread-count="5" name="Test" preserve-order="true">
-    <classes>
-      <class name="testscripts.TC_13_PanTextMoreThan10Alphanumeric"/>
-      <class name="testscripts.TC_16_PanTextFirldWithSpaces"/>
-      <class name="testscripts.TC_15_PanTextFieldWithSpecialChar"/>
-      <class name="testscripts.TC_17_CreateAccWithoutEnteringPannumber"/>
-      <class name="testscripts.TC_14_PanTextFieldWIthNumericValues"/>
-      <class name="testscripts.TC_11_PanTextField"/>
-      <class name="testscripts.TC_12_PanWithOnlyChar"/>
-    </classes>
-  </test> <!-- Test -->
+	<listeners>
+		<listener class-name="com.cams.GenericLibrary.Listener" />
+	</listeners>
+	<test thread-count="5" name="Test" preserve-order="true">
+		<classes>
+			<class name="testscripts.TC_11_PanTextField" />
+			<class name="testscripts.TC_12_PanWithOnlyChar" />
+			<class name="testscripts.TC_13_PanTextMoreThan10Alphanumeric" />
+			<class name="testscripts.TC_14_PanTextFieldWIthNumericValues" />
+			<class name="testscripts.TC_15_PanTextFieldWithSpecialChar" />
+			<class name="testscripts.TC_16_PanTextFirldWithSpaces" />
+			<class name="testscripts.TC_17_CreateAccWithoutEnteringPannumber" />
+
+
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

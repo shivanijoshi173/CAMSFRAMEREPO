@@ -25,7 +25,7 @@ public class TC_16_PanTextFirldWithSpaces extends BaseClass
 		op.pantext(pannum);
 	
 		Thread.sleep(2000);
-		String msg = op.captureerrormsg();
+		String msg = op.capturePanerrormsg();
 		SoftAssert s=new SoftAssert();
 		s.assertTrue(msg.contains("PAN entered is incorrect"));
 		s.assertAll();

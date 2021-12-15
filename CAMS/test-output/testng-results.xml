@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8454" started-at="2021-12-14T13:00:24 IST" finished-at="2021-12-14T13:00:32 IST">
+  <suite name="Suite" duration-ms="8266" started-at="2021-12-15T17:41:09 IST" finished-at="2021-12-15T17:41:17 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8454" started-at="2021-12-14T13:00:24 IST" finished-at="2021-12-14T13:00:32 IST">
-      <class name="testscripts.TC_18_CreateAccWithoutEnteringDOB">
-        <test-method status="PASS" signature="connectDB()[pri:0, instance:testscripts.TC_18_CreateAccWithoutEnteringDOB@5579bb86]" name="connectDB" is-config="true" duration-ms="16" started-at="2021-12-14T13:00:24 IST" finished-at="2021-12-14T13:00:24 IST">
+    <test name="Test" duration-ms="8266" started-at="2021-12-15T17:41:09 IST" finished-at="2021-12-15T17:41:17 IST">
+      <class name="testscripts.TC_04_EnterFirstNameWithAlphanumericValue">
+        <test-method status="PASS" signature="connectDB()[pri:0, instance:testscripts.TC_04_EnterFirstNameWithAlphanumericValue@5579bb86]" name="connectDB" is-config="true" duration-ms="8" started-at="2021-12-15T17:41:09 IST" finished-at="2021-12-15T17:41:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectDB -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testscripts.TC_18_CreateAccWithoutEnteringDOB@5579bb86]" name="launchBrowser" is-config="true" duration-ms="4656" started-at="2021-12-14T13:00:24 IST" finished-at="2021-12-14T13:00:28 IST">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testscripts.TC_04_EnterFirstNameWithAlphanumericValue@5579bb86]" name="launchBrowser" is-config="true" duration-ms="5890" started-at="2021-12-15T17:41:09 IST" finished-at="2021-12-15T17:41:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:testscripts.TC_18_CreateAccWithoutEnteringDOB@5579bb86]" name="loginToApp" is-config="true" duration-ms="0" started-at="2021-12-14T13:00:28 IST" finished-at="2021-12-14T13:00:28 IST">
+        <test-method status="PASS" signature="loginToApp()[pri:0, instance:testscripts.TC_04_EnterFirstNameWithAlphanumericValue@5579bb86]" name="loginToApp" is-config="true" duration-ms="0" started-at="2021-12-15T17:41:15 IST" finished-at="2021-12-15T17:41:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="CreateAccWithoutEnteringDOBTest()[pri:0, instance:testscripts.TC_18_CreateAccWithoutEnteringDOB@5579bb86]" name="CreateAccWithoutEnteringDOBTest" duration-ms="3771" started-at="2021-12-14T13:00:28 IST" finished-at="2021-12-14T13:00:32 IST">
+        <test-method status="PASS" signature="enterFirstName()[pri:0, instance:testscripts.TC_04_EnterFirstNameWithAlphanumericValue@5579bb86]" name="enterFirstName" duration-ms="2335" started-at="2021-12-15T17:41:15 IST" finished-at="2021-12-15T17:41:17 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateAccWithoutEnteringDOBTest -->
-        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:testscripts.TC_18_CreateAccWithoutEnteringDOB@5579bb86]" name="logoutofApp" is-config="true" duration-ms="0" started-at="2021-12-14T13:00:32 IST" finished-at="2021-12-14T13:00:32 IST">
+        </test-method> <!-- enterFirstName -->
+        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:testscripts.TC_04_EnterFirstNameWithAlphanumericValue@5579bb86]" name="logoutofApp" is-config="true" duration-ms="0" started-at="2021-12-15T17:41:17 IST" finished-at="2021-12-15T17:41:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutofApp -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscripts.TC_18_CreateAccWithoutEnteringDOB@5579bb86]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2021-12-14T13:00:32 IST" finished-at="2021-12-14T13:00:32 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscripts.TC_04_EnterFirstNameWithAlphanumericValue@5579bb86]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2021-12-15T17:41:17 IST" finished-at="2021-12-15T17:41:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="FAIL" signature="closeDB()[pri:0, instance:testscripts.TC_18_CreateAccWithoutEnteringDOB@5579bb86]" name="closeDB" is-config="true" duration-ms="0" started-at="2021-12-14T13:00:32 IST" finished-at="2021-12-14T13:00:32 IST">
+        <test-method status="FAIL" signature="closeDB()[pri:0, instance:testscripts.TC_04_EnterFirstNameWithAlphanumericValue@5579bb86]" name="closeDB" is-config="true" duration-ms="1" started-at="2021-12-15T17:41:17 IST" finished-at="2021-12-15T17:41:17 IST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -62,7 +62,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDB -->
-      </class> <!-- testscripts.TC_18_CreateAccWithoutEnteringDOB -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testscripts.TC_04_EnterFirstNameWithAlphanumericValue -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscripts.TC_18_CreateAccWithoutEnteringDOB">
+      <class name="testscripts.TC_26_EmailIdWithoutEnteringgmailcom">
         <methods>
-          <include name="CreateAccWithoutEnteringDOBTest"/>
           <include name="loginToApp"/>
+          <include name="EmailIdWithoutEnteringgmailcomTest"/>
           <include name="closeDB"/>
           <include name="launchBrowser"/>
           <include name="logoutofApp"/>
           <include name="connectDB"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- testscripts.TC_18_CreateAccWithoutEnteringDOB -->
+      </class> <!-- testscripts.TC_26_EmailIdWithoutEnteringgmailcom -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

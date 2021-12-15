@@ -24,7 +24,7 @@ public class TC_14_PanTextFieldWIthNumericValues extends BaseClass{
 		op.pantext(pannum);
 	
 		Thread.sleep(2000);
-		String msg = op.captureerrormsg();
+		String msg = op.capturePanerrormsg();
 		SoftAssert s=new SoftAssert();
 		s.assertTrue(msg.contains("PAN entered is incorrect"));
 		

@@ -28,7 +28,7 @@ public class TC_15_PanTextFieldWithSpecialChar extends BaseClass
 		
 			String expdata=pan.getAttribute("value");
 			Thread.sleep(2000);
-			String msg = op.captureerrormsg();
+			String msg = op.capturePanerrormsg();
 			SoftAssert s=new SoftAssert();
 			s.assertTrue(msg.contains("PAN entered is incorrect"));
 			s.assertTrue(!accdata.contains(expdata));

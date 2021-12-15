@@ -3,6 +3,7 @@ package com.cams.GenericLibrary;
 import java.io.FileInputStream;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -49,6 +50,17 @@ public class ExcelUtility
 	  }
 	  
 	  return data;
+  }
+  
+  public String  getexceldatainstring(String sheetname,int rownum,int cellnum) throws Throwable
+  {
+	  FileInputStream fis=new FileInputStream(IPathConstants.ExcelPath);
+	  Workbook book=WorkbookFactory.create(fis);
+	 
+	Sheet sh=book.getSheet(sheetname);
+	DataFormatter d=new DataFormatter();
+	return d.formatCellValue(sh.getRow(rownum).getCell(cellnum));
+	
   }
 
 }

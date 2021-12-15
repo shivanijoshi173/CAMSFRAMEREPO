@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.cams.GenericLibrary.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testscripts.TC_18_CreateAccWithoutEnteringDOB">
+      <class name="testscripts.TC_19_DOBTextFieldDDMONYYYYFormat">
         <methods>
-          <include name="CreateAccWithoutEnteringDOBTest"/>
           <include name="loginToApp"/>
           <include name="closeDB"/>
           <include name="launchBrowser"/>
+          <include name="DOBTextFieldDDMONYYYYFormatTest"/>
           <include name="logoutofApp"/>
           <include name="connectDB"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- testscripts.TC_18_CreateAccWithoutEnteringDOB -->
+      </class> <!-- testscripts.TC_19_DOBTextFieldDDMONYYYYFormat -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -9,4 +9,7 @@ public class JavaUtility
 		int randomNum=ran.nextInt(1000);
 		return randomNum;
 	}
+	
+	
+	
 }

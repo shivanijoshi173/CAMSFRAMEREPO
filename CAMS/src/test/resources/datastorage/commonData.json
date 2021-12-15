@@ -1,4 +1,6 @@
 {
-"url":"https://sitapp.camsnps.com/home",
+"url":"http://sitapp.camsnps.com:40002/home",
+
 "browser":"chrome"
 }
+

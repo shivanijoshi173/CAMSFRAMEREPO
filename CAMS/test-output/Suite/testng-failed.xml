@@ -6,17 +6,17 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testscripts.TC_02_EnterFirstName">
+      <class name="testscripts.TC_19_DOBTextFieldDDMONYYYYFormat">
         <methods>
-          <include name="enterFirstNameTest"/>
           <include name="loginToApp"/>
           <include name="closeDB"/>
           <include name="launchBrowser"/>
+          <include name="DOBTextFieldDDMONYYYYFormatTest"/>
           <include name="logoutofApp"/>
           <include name="connectDB"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- testscripts.TC_02_EnterFirstName -->
+      </class> <!-- testscripts.TC_19_DOBTextFieldDDMONYYYYFormat -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

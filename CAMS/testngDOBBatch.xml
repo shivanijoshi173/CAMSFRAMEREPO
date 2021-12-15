@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+	<listener class-name="com.cams.GenericLibrary.Listener"/>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testscripts.TC_20_DOBTextFieldBelow18Age"/>
+      <class name="testscripts.TC_19_DOBTextFieldDDMONYYYYFormat"/>
+      <class name="testscripts.TC_18_CreateAccWithoutEnteringDOB"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

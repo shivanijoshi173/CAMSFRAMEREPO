@@ -18,7 +18,8 @@ public class Listener implements ITestListener
 	ExtentTest test;// to make every of test cases and logs
 	
 	public void onTestStart(ITestResult result) {
-		test=reports.createTest(result.getMethod().getMethodName());
+		test
+		=reports.createTest(result.getMethod().getMethodName());
 
 	}
 	public void onTestSuccess(ITestResult result) {
@@ -49,7 +50,8 @@ public class Listener implements ITestListener
 
 	}
 	
-	public void onStart(ITestContext context) {
+	public void onStart(ITestContext context) 
+	{
 
 		ExtentHtmlReporter reporter=new ExtentHtmlReporter(System.getProperty("user.dir")+"/ExtentReports/ExtentReports"+jLib.getrandomNum()+".html");
 		reporter.config().setDocumentTitle("CAMS");

@@ -1,7 +1,7 @@
 package testscripts;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.cams.GenericLibrary.BaseClass;
 import com.cams.ObjectRepository.HomePage;
@@ -16,17 +16,15 @@ public class TC_18_CreateAccWithoutEnteringDOB extends BaseClass
 		HomePage hp=new HomePage(driver);
 		hp.clickoninvestnow();
 		
+		Thread.sleep(2000);
 		OpenAccountPage op= new OpenAccountPage(driver);
-		op.dobtext();
+		boolean button = op.openaccbutton();
+		System.out.println(button);
 		
-//		//driver.findElement(By.xpath("//div[@class='mat-calendar-arrow']")).click();
-//		//driver.findElement(By.xpath("//button[@aria-label='Previous 20 years']")).click();
-//		driver.findElement(By.xpath("(//table[@class='mat-calendar-table']/tbody/tr/td[*])[3]")).click();
-//		
-//		 Thread.sleep(2000);
-//		
-//	     driver.findElement(By.xpath("(//table[@class='mat-calendar-table']/tbody/tr/td[*])[5]")).click();
-//	     
-//		driver.findElement(By.xpath("(//table[@class='mat-calendar-table']/tbody/tr/td[*])[5]")).click();
+		SoftAssert s=new SoftAssert();
+		s.assertEquals(button, true);
+		s.assertAll();
+		System.out.println("test case is pass");
+	
 	}
 }

@@ -65,7 +65,7 @@ public class BaseClass {
 	@AfterClass
 	public void closeBrowser() {
 		System.out.println("========closeBrowser========");
-		// driver.close();
+		 //driver.close();
 	}
 
 	@AfterSuite

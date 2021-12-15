@@ -28,7 +28,7 @@ public class TC_12_PanWithOnlyChar extends BaseClass{
 	
 		Thread.sleep(2000);
 		
-		String msg = op.captureerrormsg();
+		String msg = op.capturePanerrormsg();
 		
 		SoftAssert s=new SoftAssert();
 		s.assertTrue(msg.contains("PAN entered is incorrect"));
