@@ -1,10 +1,14 @@
 package com.cams.ObjectRepository;
 
+import java.util.List;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.mysql.cj.x.protobuf.MysqlxExpect.Open.Condition.Key;
 
 public class OpenAccountPage {
 	public OpenAccountPage(WebDriver driver) {
@@ -12,7 +16,12 @@ public class OpenAccountPage {
 	}
 
 	// find all the webelement by @findBy,@findBys
-	//FIRST NAME
+	
+	//FIRSTNAME TEXT
+	@FindBy(xpath="//mat-label[text()='First Name']")
+	private WebElement name;
+	
+	//FIRSTNAMETEXTFIELD 
 	@FindBy(xpath = "//input[@formcontrolname='name']")
 	private WebElement firstname;
 
@@ -56,6 +65,7 @@ public class OpenAccountPage {
 	@FindBy(xpath = "//input[@formcontrolname='mobile']")
 	private WebElement mob;
 
+
 	//OPENNEWACCBUTTON
 	@FindBy(xpath = "//span[text()=' OPEN NEW ACCOUNT']")
 	private WebElement opennewaccountbutton;
@@ -70,14 +80,32 @@ public class OpenAccountPage {
 	
 	//EMAILERRORMSG
 	@FindBy(xpath="//mat-error[text()=' Not a valid emailaddress ']")
-	public WebElement emailerrormsg;
+	private WebElement emailerrormsg;
 
+	//MOBILEERRORMSG
+	@FindBy(xpath="//mat-error[text()='Mobile Number length should be 10']")
+	private WebElement mobileerrormsg;
 	
+	//MOBILEFIELDREQUIREDerror
+	@FindBy(xpath="//mat-error[text()='This field is required']")
+	private WebElement mobilerequirederror;
 
+	//MOBILENOCOUNTRYCODE
+	@FindBy(xpath="//div[@class='mat-select-arrow-wrapper ng-tns-c150-9']")
+	private WebElement countrycode;
+	
+	@FindBy(xpath="//span[@class='mat-option-text']")
+	private List<WebElement> ListofCountrycode;
+	
 	// provied getter method
+	public WebElement getName() {
+		return name;
+	}
+	
 	public WebElement getFirstname() {
 		return firstname;
 	}
+	
 	public WebElement getErrormsg() {
 		return Panerrormsg;
 	}
@@ -122,31 +150,55 @@ public class OpenAccountPage {
 	public WebElement getEmailerrormsg() {
 		return emailerrormsg;
 	}
+	
+	public WebElement getMobileerrormsg() {
+		return mobileerrormsg;
+	}
+	
+	public WebElement getMobilerequirederror() {
+		return mobilerequirederror;
+	}
+	
+	public WebElement getCountrycode() {
+		return countrycode;
+	}
+	
+
+	public List<WebElement> getListofCountrycode() {
+		return ListofCountrycode;
+	}
 
 	// business logic
+	public WebElement Fname()
+	{
+		return firstname;
+	}
+	
+	//FIRSTNAMETEXT
 	public WebElement FirstName(String name) {
 		firstname.sendKeys(name);
 		return firstname;
 	}
-
-	public boolean openaccbutton() {
-		return opennewaccountbutton.isEnabled();
-	}
-
+	
+	//PANTEXT
 	public WebElement pantext(String pannum) {
 		pan.sendKeys(pannum, Keys.TAB);
 		return pan;
 	}
-
+	
+	//PANERRORMSG
 	public String capturePanerrormsg() {
 		return Panerrormsg.getText();
 	}
-
-	public String captureDOBerrormsg() {
-		return DOBerrormsg.getText();
-		
+	
+	//DOBTEXTFIELD
+	public WebElement dobtext() {
+		return dobtestfield;
 	}
-	public void dobicon() throws InterruptedException {
+	
+	//DOBICON
+	public void dobicon() throws InterruptedException 
+	{
 		dob.click();
 		Thread.sleep(2000);
 		arrow.click();
@@ -156,23 +208,78 @@ public class OpenAccountPage {
 		date.click();
 
 	}
-
-	public WebElement dobtext() {
-		return dobtestfield;
+	
+	//DOBERRORMSG
+	public String captureDOBerrormsg() 
+	{
+		return DOBerrormsg.getText();	
 	}
-
+	
+	//DOBBELOW18
 	public void dobbelow18(String dobbelow18) {
 		dobtestfield.sendKeys(dobbelow18, Keys.TAB);
 	}
 	
+	//EMAILTEXT
 	public WebElement emailtext(String emailid)
 	{
 		email.sendKeys(emailid,Keys.TAB);
 		return email;
 	}
 	
-	public String captureemailerrormsg() {
+	//EMAILERRORMSG
+	public String captureemailerrormsg() 
+	{
 		return emailerrormsg.getText();
 		
 	}
+	
+	
+	public WebElement mobile(String mobiletext) 
+	{
+		mob.sendKeys(mobiletext,Keys.TAB);
+	
+		return mob;
+	}
+	
+	public String captureMobileerrormsg()
+	{
+		return mobileerrormsg.getText();
+	}
+	
+	public String captureMobilenorequirederrormsg()
+	{
+		return mobilerequirederror.getText();
+		
+	}
+	
+	public WebElement countycodearrowmark()
+	{
+		countrycode.click();
+		return countrycode;
+	}
+	
+	public List<WebElement> countrycodelist() {
+		return ListofCountrycode;
+	}
+	//OPENNEWACCOUNTBUTTON
+	public boolean openaccbutton() 
+	{
+		return opennewaccountbutton.isEnabled();
+	}
+
+	
+
+	
+
+	
+	
+
+	
+
+	
+	
+	
+	
+	
 }

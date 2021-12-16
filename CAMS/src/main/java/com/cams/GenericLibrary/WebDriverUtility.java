@@ -38,6 +38,12 @@ public class WebDriverUtility
     	 Select sel=new Select(element);
     	 sel.selectByValue(value);
      }
+     
+     public void select(WebElement element)
+     {
+		Select sel=new Select(element);
+		sel.getOptions();
+     }
      /**
       * this method will select from the dropdown using Index
       * @param element

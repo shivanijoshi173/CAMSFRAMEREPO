@@ -6,17 +6,17 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testscripts.TC_19_DOBTextFieldDDMONYYYYFormat">
+      <class name="testscripts.TC_29_EnterInValidMobileNumberInMobileTextField">
         <methods>
           <include name="loginToApp"/>
           <include name="closeDB"/>
           <include name="launchBrowser"/>
-          <include name="DOBTextFieldDDMONYYYYFormatTest"/>
+          <include name="EnterValidMobileNumberInMobileTextFieldTest"/>
           <include name="logoutofApp"/>
           <include name="connectDB"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- testscripts.TC_19_DOBTextFieldDDMONYYYYFormat -->
+      </class> <!-- testscripts.TC_29_EnterInValidMobileNumberInMobileTextField -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
