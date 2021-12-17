@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10637" started-at="2021-12-16T18:15:05 IST" finished-at="2021-12-16T18:15:15 IST">
+  <suite name="Default suite" duration-ms="15155" started-at="2021-12-17T18:00:31 IST" finished-at="2021-12-17T18:00:46 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10637" started-at="2021-12-16T18:15:05 IST" finished-at="2021-12-16T18:15:15 IST">
-      <class name="testscripts.TC_37_MobileNumberCountryCodeWorkingOrNot">
-        <test-method status="PASS" signature="connectDB()[pri:0, instance:testscripts.TC_37_MobileNumberCountryCodeWorkingOrNot@5579bb86]" name="connectDB" is-config="true" duration-ms="0" started-at="2021-12-16T18:15:05 IST" finished-at="2021-12-16T18:15:05 IST">
+    <test name="Default test" duration-ms="15155" started-at="2021-12-17T18:00:31 IST" finished-at="2021-12-17T18:00:46 IST">
+      <class name="OTPVerificationTestScript.TC_02_OTPVerificationAfterLoginToApp">
+        <test-method status="PASS" signature="connectDB()[pri:0, instance:OTPVerificationTestScript.TC_02_OTPVerificationAfterLoginToApp@5579bb86]" name="connectDB" is-config="true" duration-ms="0" started-at="2021-12-17T18:00:31 IST" finished-at="2021-12-17T18:00:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectDB -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testscripts.TC_37_MobileNumberCountryCodeWorkingOrNot@5579bb86]" name="launchBrowser" is-config="true" duration-ms="5069" started-at="2021-12-16T18:15:05 IST" finished-at="2021-12-16T18:15:10 IST">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:OTPVerificationTestScript.TC_02_OTPVerificationAfterLoginToApp@5579bb86]" name="launchBrowser" is-config="true" duration-ms="12307" started-at="2021-12-17T18:00:31 IST" finished-at="2021-12-17T18:00:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="MobileNumberCountryCodeWorkingOrNotTest()[pri:0, instance:testscripts.TC_37_MobileNumberCountryCodeWorkingOrNot@5579bb86]" name="MobileNumberCountryCodeWorkingOrNotTest" duration-ms="5554" started-at="2021-12-16T18:15:10 IST" finished-at="2021-12-16T18:15:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MobileNumberCountryCodeWorkingOrNotTest -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:testscripts.TC_37_MobileNumberCountryCodeWorkingOrNot@5579bb86]" name="loginToApp" is-config="true" duration-ms="0" started-at="2021-12-16T18:15:10 IST" finished-at="2021-12-16T18:15:10 IST">
+        <test-method status="PASS" signature="loginToApp()[pri:0, instance:OTPVerificationTestScript.TC_02_OTPVerificationAfterLoginToApp@5579bb86]" name="loginToApp" is-config="true" duration-ms="0" started-at="2021-12-17T18:00:43 IST" finished-at="2021-12-17T18:00:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscripts.TC_37_MobileNumberCountryCodeWorkingOrNot@5579bb86]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2021-12-16T18:15:15 IST" finished-at="2021-12-16T18:15:15 IST">
+        <test-method status="PASS" signature="OTPVerificationAfterLoginToAppTest()[pri:0, instance:OTPVerificationTestScript.TC_02_OTPVerificationAfterLoginToApp@5579bb86]" name="OTPVerificationAfterLoginToAppTest" duration-ms="2819" started-at="2021-12-17T18:00:43 IST" finished-at="2021-12-17T18:00:46 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:testscripts.TC_37_MobileNumberCountryCodeWorkingOrNot@5579bb86]" name="logoutofApp" is-config="true" duration-ms="0" started-at="2021-12-16T18:15:15 IST" finished-at="2021-12-16T18:15:15 IST">
+        </test-method> <!-- OTPVerificationAfterLoginToAppTest -->
+        <test-method status="PASS" signature="logoutofApp()[pri:0, instance:OTPVerificationTestScript.TC_02_OTPVerificationAfterLoginToApp@5579bb86]" name="logoutofApp" is-config="true" duration-ms="1" started-at="2021-12-17T18:00:46 IST" finished-at="2021-12-17T18:00:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutofApp -->
-        <test-method status="FAIL" signature="closeDB()[pri:0, instance:testscripts.TC_37_MobileNumberCountryCodeWorkingOrNot@5579bb86]" name="closeDB" is-config="true" duration-ms="0" started-at="2021-12-16T18:15:15 IST" finished-at="2021-12-16T18:15:15 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:OTPVerificationTestScript.TC_02_OTPVerificationAfterLoginToApp@5579bb86]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2021-12-17T18:00:46 IST" finished-at="2021-12-17T18:00:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="FAIL" signature="closeDB()[pri:0, instance:OTPVerificationTestScript.TC_02_OTPVerificationAfterLoginToApp@5579bb86]" name="closeDB" is-config="true" duration-ms="0" started-at="2021-12-17T18:00:46 IST" finished-at="2021-12-17T18:00:46 IST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -62,7 +62,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDB -->
-      </class> <!-- testscripts.TC_37_MobileNumberCountryCodeWorkingOrNot -->
+      </class> <!-- OTPVerificationTestScript.TC_02_OTPVerificationAfterLoginToApp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

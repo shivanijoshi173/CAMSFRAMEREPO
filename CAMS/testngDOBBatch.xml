@@ -6,9 +6,9 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testscripts.TC_20_DOBTextFieldBelow18Age"/>
-      <class name="testscripts.TC_19_DOBTextFieldDDMONYYYYFormat"/>
-      <class name="testscripts.TC_18_CreateAccWithoutEnteringDOB"/>
+      <class name="CreateNewAccountTestScript.TC_20_DOBTextFieldBelow18Age"/>
+      <class name="CreateNewAccountTestScript.TC_19_DOBTextFieldDDMONYYYYFormat"/>
+      <class name="CreateNewAccountTestScript.TC_18_CreateAccWithoutEnteringDOB"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

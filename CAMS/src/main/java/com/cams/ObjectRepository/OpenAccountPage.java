@@ -56,7 +56,7 @@ public class OpenAccountPage {
 	//DOBICONDATE
 	@FindBy(xpath = "(//table[@class='mat-calendar-table']/tbody/tr/td[*])[5]")
 	private WebElement date;
-
+	
 	//EMAIL
 	@FindBy(xpath = "//input[@formcontrolname='email']")
 	private WebElement email;
@@ -78,6 +78,10 @@ public class OpenAccountPage {
 	@FindBy(xpath = "//mat-error[text()='Age should be 18 years to 65 years']")
 	private WebElement DOBerrormsg;
 	
+	//DOBREQUIREDERRORMSG
+	@FindBy(xpath="//mat-error[text()=' This field is required ']")
+	private WebElement DOBREQUIREDerrormsg;
+	
 	//EMAILERRORMSG
 	@FindBy(xpath="//mat-error[text()=' Not a valid emailaddress ']")
 	private WebElement emailerrormsg;
@@ -94,8 +98,36 @@ public class OpenAccountPage {
 	@FindBy(xpath="//div[@class='mat-select-arrow-wrapper ng-tns-c150-9']")
 	private WebElement countrycode;
 	
+	
+	//LISTOFCOUNTRYCODE
 	@FindBy(xpath="//span[@class='mat-option-text']")
 	private List<WebElement> ListofCountrycode;
+	
+	
+	//LOGINLINK
+	@FindBy(xpath="//a[text()='Login to Existing Account']")
+	private WebElement link;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	// provied getter method
 	public WebElement getName() {
@@ -144,6 +176,10 @@ public class OpenAccountPage {
 		return DOBerrormsg;
 	}
 
+	public WebElement getDOBREQUIREDerrormsg() {
+		return DOBREQUIREDerrormsg;
+	}
+
 	public WebElement getPreviousarrow() {
 		return previousarrow;
 	}
@@ -168,6 +204,23 @@ public class OpenAccountPage {
 		return ListofCountrycode;
 	}
 
+	public WebElement getLink() {
+		return link;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	// business logic
 	public WebElement Fname()
 	{
@@ -192,7 +245,8 @@ public class OpenAccountPage {
 	}
 	
 	//DOBTEXTFIELD
-	public WebElement dobtext() {
+	public WebElement dobtext(String dob) {
+		dobtestfield.sendKeys(dob);
 		return dobtestfield;
 	}
 	
@@ -215,6 +269,12 @@ public class OpenAccountPage {
 		return DOBerrormsg.getText();	
 	}
 	
+	//DOBREQUIREDERRORMSG
+	public String captureDOBRequiredError()
+	{
+		return DOBREQUIREDerrormsg.getText();
+		
+	}
 	//DOBBELOW18
 	public void dobbelow18(String dobbelow18) {
 		dobtestfield.sendKeys(dobbelow18, Keys.TAB);
@@ -233,7 +293,7 @@ public class OpenAccountPage {
 		return emailerrormsg.getText();
 		
 	}
-	
+
 	
 	public WebElement mobile(String mobiletext) 
 	{
@@ -262,10 +322,36 @@ public class OpenAccountPage {
 	public List<WebElement> countrycodelist() {
 		return ListofCountrycode;
 	}
+	
+	
+	public void loginlink()
+	{
+		link.click();
+	}
+	
+	
+	
+	
+	//OPENACCOUNTWITHEMPTYFIELDS
+	public void OpenAccWithEmptyFields() throws Throwable
+	{
+		firstname.sendKeys(Keys.TAB);
+		pan.sendKeys(Keys.TAB);
+		dob.sendKeys(Keys.TAB);
+		Thread.sleep(2000);
+		email.sendKeys(Keys.TAB);
+		mob.sendKeys(Keys.TAB);
+	
+		
+	}
+	
+	
 	//OPENNEWACCOUNTBUTTON
 	public boolean openaccbutton() 
 	{
+		opennewaccountbutton.click();
 		return opennewaccountbutton.isEnabled();
+		
 	}
 
 	

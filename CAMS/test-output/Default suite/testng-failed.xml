@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscripts.selectclassdemo">
+      <class name="CreateNewAccountTestScript.TC_44_CreateNewAccountWithoutEnteringAnyOneField">
         <methods>
           <include name="loginToApp"/>
-          <include name="selectdemo"/>
           <include name="closeDB"/>
           <include name="launchBrowser"/>
           <include name="logoutofApp"/>
           <include name="connectDB"/>
           <include name="closeBrowser"/>
+          <include name="CreateNewAccountWithoutEnteringAnyOneFieldTest"/>
         </methods>
-      </class> <!-- testscripts.selectclassdemo -->
+      </class> <!-- CreateNewAccountTestScript.TC_44_CreateNewAccountWithoutEnteringAnyOneField -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

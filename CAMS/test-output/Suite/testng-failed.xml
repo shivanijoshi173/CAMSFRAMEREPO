@@ -6,17 +6,17 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testscripts.TC_29_EnterInValidMobileNumberInMobileTextField">
+      <class name="CreateNewAccountTestScript.TC_44_CreateNewAccountWithoutEnteringAnyOneField">
         <methods>
           <include name="loginToApp"/>
           <include name="closeDB"/>
           <include name="launchBrowser"/>
-          <include name="EnterValidMobileNumberInMobileTextFieldTest"/>
           <include name="logoutofApp"/>
           <include name="connectDB"/>
           <include name="closeBrowser"/>
+          <include name="CreateNewAccountWithoutEnteringAnyOneFieldTest"/>
         </methods>
-      </class> <!-- testscripts.TC_29_EnterInValidMobileNumberInMobileTextField -->
+      </class> <!-- CreateNewAccountTestScript.TC_44_CreateNewAccountWithoutEnteringAnyOneField -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

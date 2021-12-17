@@ -6,13 +6,13 @@
 	</listeners>
 	<test thread-count="5" name="Test" preserve-order="true">
 		<classes>
-			<class name="testscripts.TC_11_PanTextField" />
-			<class name="testscripts.TC_12_PanWithOnlyChar" />
-			<class name="testscripts.TC_13_PanTextMoreThan10Alphanumeric" />
-			<class name="testscripts.TC_14_PanTextFieldWIthNumericValues" />
-			<class name="testscripts.TC_15_PanTextFieldWithSpecialChar" />
-			<class name="testscripts.TC_16_PanTextFirldWithSpaces" />
-			<class name="testscripts.TC_17_CreateAccWithoutEnteringPannumber" />
+			<class name="CreateNewAccountTestScript.TC_11_PanTextField" />
+			<class name="CreateNewAccountTestScript.TC_12_PanWithOnlyChar" />
+			<class name="CreateNewAccountTestScript.TC_13_PanTextMoreThan10Alphanumeric" />
+			<class name="CreateNewAccountTestScript.TC_14_PanTextFieldWIthNumericValues" />
+			<class name="CreateNewAccountTestScript.TC_15_PanTextFieldWithSpecialChar" />
+			<class name="CreateNewAccountTestScript.TC_16_PanTextFirldWithSpaces" />
+			<class name="CreateNewAccountTestScript.TC_17_CreateAccWithoutEnteringPannumber" />
 
 
 		</classes>

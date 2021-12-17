@@ -10,7 +10,7 @@ public class HomePage
 	//WebDriver driver=null;
 	public HomePage(WebDriver driver)
 	{
-	//	this.driver=driver;
+	
 		PageFactory.initElements(driver, this);
 	}
 	// find all the elements by @findBy

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+	<listener class-name="com.cams.GenericLibrary.Listener"/>
+</listeners>
+  <test thread-count="5" name="Test" Preserve-order="true">
+    <classes>
+      <class name="CreateNewAccountTestScript.TC_45_CreateNewAccountWithoutEnteringAnyCredentials"/>
+      <class name="CreateNewAccountTestScript.TC_42_CreateNewAccButton"/>
+      <class name="CreateNewAccountTestScript.TC_46_CreateAccountAndCheckGettingOTPVerificationPageOrNot"/>
+      <class name="CreateNewAccountTestScript.TC_43_CreateNewAccountWithValidDetails"/>
+      <class name="CreateNewAccountTestScript.TC_44_CreateNewAccountWithoutEnteringAnyOneField"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

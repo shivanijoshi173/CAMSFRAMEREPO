@@ -6,16 +6,16 @@
 </listeners>
   <test thread-count="5" name="Test" preserve-order="true">
     <classes>
-      <class name="testscripts.TC_33_MobileNumberWithAlphanumericValue"/>
-      <class name="testscripts.TC_29_EnterInValidMobileNumberInMobileTextField"/>
-      <class name="testscripts.TC_35_MobileNumberWithSpecialChar"/>
-      <class name="testscripts.TC_36_MobileNumberWithSpaces"/>
-      <class name="testscripts.TC_28_EnterMobileInTextField"/>
-      <class name="testscripts.TC_32_MobileNumberWith9Digit"/>
-      <class name="testscripts.TC_31_MobileNumberWith11Digit"/>
-      <class name="testscripts.TC_30_EnterValidMobileNumberInMobileNumbertextField"/>
-      <class name="testscripts.TC_37_MobileNumberCountryCodeWorkingOrNot"/>
-      <class name="testscripts.TC_34_MobileNumberWithAlphabeticalChar"/>
+      <class name="CreateNewAccountTestScript.TC_33_MobileNumberWithAlphanumericValue"/>
+      <class name="CreateNewAccountTestScript.TC_29_EnterInValidMobileNumberInMobileTextField"/>
+      <class name="CreateNewAccountTestScript.TC_35_MobileNumberWithSpecialChar"/>
+      <class name="CreateNewAccountTestScript.TC_36_MobileNumberWithSpaces"/>
+      <class name="CreateNewAccountTestScript.TC_28_EnterMobileInTextField"/>
+      <class name="CreateNewAccountTestScript.TC_32_MobileNumberWith9Digit"/>
+      <class name="CreateNewAccountTestScript.TC_31_MobileNumberWith11Digit"/>
+      <class name="CreateNewAccountTestScript.TC_30_EnterValidMobileNumberInMobileNumbertextField"/>
+      <class name="CreateNewAccountTestScript.TC_37_MobileNumberCountryCodeWorkingOrNot"/>
+      <class name="CreateNewAccountTestScript.TC_34_MobileNumberWithAlphabeticalChar"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
