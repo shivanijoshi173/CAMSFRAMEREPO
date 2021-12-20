@@ -1,14 +1,11 @@
 package CreateNewAccountTestScript;
 
-import java.util.Set;
-
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.cams.GenericLibrary.BaseClass;
 import com.cams.GenericLibrary.ExcelUtility;
 import com.cams.GenericLibrary.WebDriverUtility;
-import com.cams.ObjectRepository.FirstOTPVerification;
 import com.cams.ObjectRepository.HomePage;
 import com.cams.ObjectRepository.OpenAccountPage;
 

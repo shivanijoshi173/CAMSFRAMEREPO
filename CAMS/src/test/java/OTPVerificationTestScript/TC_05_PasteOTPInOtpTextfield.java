@@ -1,9 +1,9 @@
-package CreateNewAccountTestScript;
+package OTPVerificationTestScript;
 
-import java.util.Set;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import com.cams.GenericLibrary.BaseClass;
 import com.cams.GenericLibrary.ExcelUtility;
@@ -12,21 +12,21 @@ import com.cams.ObjectRepository.HomePage;
 import com.cams.ObjectRepository.MobileOTPVerificationPage;
 import com.cams.ObjectRepository.OpenAccountPage;
 
-public class TC_46_CreateAccountAndCheckGettingOTPVerificationPageOrNot extends BaseClass
+public class TC_05_PasteOTPInOtpTextfield extends BaseClass 
 {
 	@Test
-	public void CreateAccountAndCheckGettingOTPVerificationPageOrNotTest() throws Throwable
+	public void PasteOTPInOtpTextfieldTest() throws Throwable
 	{
+
 		String title = null;
 		ExcelUtility ex=new ExcelUtility();
 		WebDriverUtility wb=new WebDriverUtility();
 		wb.waitForPageLoad(driver);
-		String Name=ex.getexceldatainstring("Sheet1", 10, 0);	
-		//String acctdata=Name;
-		String Pan=ex.getexceldatainstring("Sheet1",10 ,1);
-		String DOB=ex.getexceldatainstring("Sheet1",10,2);
-		String Email=ex.getexceldatainstring("Sheet1",10,3);
-		String Mobile=ex.getexceldatainstring("Sheet1",10,4);
+		String Name=ex.getexceldatainstring("Sheet1", 15, 0);	
+		String Pan=ex.getexceldatainstring("Sheet1",15 ,1);
+		String DOB=ex.getexceldatainstring("Sheet1",15,2);
+		String Email=ex.getexceldatainstring("Sheet1",15,3);
+		String Mobile=ex.getexceldatainstring("Sheet1",15,4);
 		
 		
 		HomePage hp=new HomePage(driver);
@@ -43,20 +43,25 @@ public class TC_46_CreateAccountAndCheckGettingOTPVerificationPageOrNot extends 
 		op.emailtext(Email);
 		op.mobile(Mobile);
 		op.openaccbutton();
+		
+		
 		MobileOTPVerificationPage fo=new MobileOTPVerificationPage(driver);
 		String text = fo.getnameofOpenSub();
-	
-		System.out.println(text);
+		String num = ex.getexceldatainstring("Sheet1",15,7);
 		
-		Set<String>allwin=driver.getWindowHandles();
-		for(String win:allwin )
-		{
-			driver.switchTo().window(win);
-			title = driver.getTitle();
-			System.out.println(title);
-		}
-		SoftAssert s=new SoftAssert();
-		s.assertEquals(parent, title);
-		System.out.println(getClass().getName()+"\n"+"THIS TEST CASE IS PASSED");	
+		
+		Robot r=new Robot();
+		r.keyPress(KeyEvent.VK_CONTROL);
+		r.keyPress(KeyEvent.VK_C);
+		r.keyRelease(KeyEvent.VK_CONTROL);
+		r.keyRelease(KeyEvent.VK_C);
+		
+		r.keyPress(KeyEvent.VK_CONTROL);
+		r.keyPress(KeyEvent.VK_V);
+		r.keyRelease(KeyEvent.VK_CONTROL);
+		r.keyRelease(KeyEvent.VK_V);
+		
+		
+		//fo.otptext(num);
 	}
 }

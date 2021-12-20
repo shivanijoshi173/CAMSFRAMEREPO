@@ -6,17 +6,50 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="CreateNewAccountTestScript.TC_44_CreateNewAccountWithoutEnteringAnyOneField">
+      <class name="OTPVerificationTestScript.TC_07_OTPVerificationGettingEmailVerificationpageOrNot">
         <methods>
           <include name="loginToApp"/>
+          <include name="OTPVerificationGettingEmailVerificationpageOrNotText"/>
           <include name="closeDB"/>
           <include name="launchBrowser"/>
           <include name="logoutofApp"/>
           <include name="connectDB"/>
           <include name="closeBrowser"/>
-          <include name="CreateNewAccountWithoutEnteringAnyOneFieldTest"/>
         </methods>
-      </class> <!-- CreateNewAccountTestScript.TC_44_CreateNewAccountWithoutEnteringAnyOneField -->
+      </class> <!-- OTPVerificationTestScript.TC_07_OTPVerificationGettingEmailVerificationpageOrNot -->
+      <class name="OTPVerificationTestScript.TC_04_OTPVerificationAfterTimeIsOver">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="OTPVerificationAfterTimeIsOverText"/>
+          <include name="closeDB"/>
+          <include name="launchBrowser"/>
+          <include name="logoutofApp"/>
+          <include name="connectDB"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- OTPVerificationTestScript.TC_04_OTPVerificationAfterTimeIsOver -->
+      <class name="OTPVerificationTestScript.TC_03_OTPVerificationAfterCreatingNewAcc">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="closeDB"/>
+          <include name="launchBrowser"/>
+          <include name="logoutofApp"/>
+          <include name="OTPVerificationAfterCreatingNewAccTest"/>
+          <include name="connectDB"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- OTPVerificationTestScript.TC_03_OTPVerificationAfterCreatingNewAcc -->
+      <class name="OTPVerificationTestScript.TC_10_EnterSameOTPForMobileAndEmailOTPVerification">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="EnterSameOTPForMobileAndEmailOTPVerificationTest"/>
+          <include name="closeDB"/>
+          <include name="launchBrowser"/>
+          <include name="logoutofApp"/>
+          <include name="connectDB"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- OTPVerificationTestScript.TC_10_EnterSameOTPForMobileAndEmailOTPVerification -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

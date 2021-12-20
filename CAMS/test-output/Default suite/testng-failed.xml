@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CreateNewAccountTestScript.TC_44_CreateNewAccountWithoutEnteringAnyOneField">
+      <class name="OTPVerificationTestScript.TC_03_OTPVerificationAfterCreatingNewAcc">
         <methods>
           <include name="loginToApp"/>
           <include name="closeDB"/>
           <include name="launchBrowser"/>
           <include name="logoutofApp"/>
+          <include name="OTPVerificationAfterCreatingNewAccTest"/>
           <include name="connectDB"/>
           <include name="closeBrowser"/>
-          <include name="CreateNewAccountWithoutEnteringAnyOneFieldTest"/>
         </methods>
-      </class> <!-- CreateNewAccountTestScript.TC_44_CreateNewAccountWithoutEnteringAnyOneField -->
+      </class> <!-- OTPVerificationTestScript.TC_03_OTPVerificationAfterCreatingNewAcc -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

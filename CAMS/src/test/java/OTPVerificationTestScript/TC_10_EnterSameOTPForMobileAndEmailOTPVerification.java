@@ -1,6 +1,4 @@
-package CreateNewAccountTestScript;
-
-import java.util.Set;
+package OTPVerificationTestScript;
 
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -8,26 +6,23 @@ import org.testng.asserts.SoftAssert;
 import com.cams.GenericLibrary.BaseClass;
 import com.cams.GenericLibrary.ExcelUtility;
 import com.cams.GenericLibrary.WebDriverUtility;
+import com.cams.ObjectRepository.EmailOTPVerificationPage;
 import com.cams.ObjectRepository.HomePage;
 import com.cams.ObjectRepository.MobileOTPVerificationPage;
 import com.cams.ObjectRepository.OpenAccountPage;
 
-public class TC_46_CreateAccountAndCheckGettingOTPVerificationPageOrNot extends BaseClass
+public class TC_10_EnterSameOTPForMobileAndEmailOTPVerification extends BaseClass 
 {
 	@Test
-	public void CreateAccountAndCheckGettingOTPVerificationPageOrNotTest() throws Throwable
+	public void EnterSameOTPForMobileAndEmailOTPVerificationTest() throws Throwable
 	{
-		String title = null;
 		ExcelUtility ex=new ExcelUtility();
 		WebDriverUtility wb=new WebDriverUtility();
-		wb.waitForPageLoad(driver);
-		String Name=ex.getexceldatainstring("Sheet1", 10, 0);	
-		//String acctdata=Name;
-		String Pan=ex.getexceldatainstring("Sheet1",10 ,1);
-		String DOB=ex.getexceldatainstring("Sheet1",10,2);
-		String Email=ex.getexceldatainstring("Sheet1",10,3);
-		String Mobile=ex.getexceldatainstring("Sheet1",10,4);
-		
+		String Name=ex.getexceldatainstring("Sheet1", 17, 0);	
+		String Pan=ex.getexceldatainstring("Sheet1",17 ,1);
+		String DOB=ex.getexceldatainstring("Sheet1",17,2);
+		String Email=ex.getexceldatainstring("Sheet1",17,3);
+		String Mobile=ex.getexceldatainstring("Sheet1",17,4);
 		
 		HomePage hp=new HomePage(driver);
 		hp.clickoninvestnow();
@@ -43,20 +38,26 @@ public class TC_46_CreateAccountAndCheckGettingOTPVerificationPageOrNot extends 
 		op.emailtext(Email);
 		op.mobile(Mobile);
 		op.openaccbutton();
+		
+		
 		MobileOTPVerificationPage fo=new MobileOTPVerificationPage(driver);
-		String text = fo.getnameofOpenSub();
-	
+		fo.getnameofOpenSub();
+		
+		String num = ex.getexceldatainstring("Sheet1",17,7);
+		fo.otptext(num);
+		System.out.println(num);
+		
+		EmailOTPVerificationPage mail=new EmailOTPVerificationPage(driver);
+		String text = mail.emailtextdata();
 		System.out.println(text);
 		
-		Set<String>allwin=driver.getWindowHandles();
-		for(String win:allwin )
-		{
-			driver.switchTo().window(win);
-			title = driver.getTitle();
-			System.out.println(title);
-		}
+		String emailotp = ex.getexceldatainstring("Sheet1",17,7);
+		mail.emailtextfield(emailotp);
+		
 		SoftAssert s=new SoftAssert();
-		s.assertEquals(parent, title);
-		System.out.println(getClass().getName()+"\n"+"THIS TEST CASE IS PASSED");	
+		s.assertEquals(num, emailotp);
+		s.assertAll();
+		
+		
 	}
 }

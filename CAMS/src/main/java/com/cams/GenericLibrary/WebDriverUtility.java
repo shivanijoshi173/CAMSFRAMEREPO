@@ -157,7 +157,7 @@ public class WebDriverUtility
       * this method will wait for element to be visible
       */
      public void waitForElementToBeVisible(WebDriver driver,WebElement element) {
-    	 WebDriverWait wait=new WebDriverWait(driver,20);
+    	 WebDriverWait wait=new WebDriverWait(driver,60);
     	 wait.until(ExpectedConditions.visibilityOf(element));
     	 
      }

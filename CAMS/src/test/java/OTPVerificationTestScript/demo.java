@@ -1,7 +1,6 @@
 package OTPVerificationTestScript;
 
-import java.util.Set;
-
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -12,21 +11,21 @@ import com.cams.ObjectRepository.HomePage;
 import com.cams.ObjectRepository.MobileOTPVerificationPage;
 import com.cams.ObjectRepository.OpenAccountPage;
 
-public class TC_01_OTPVerificationPage extends BaseClass
+public class demo extends BaseClass
 {
 	@Test
-	public void OTPVerificationPageTest() throws Throwable
+	public void demotest() throws Throwable
 	{
-		String title = null;
+		
 		ExcelUtility ex=new ExcelUtility();
 		WebDriverUtility wb=new WebDriverUtility();
-		wb.waitForPageLoad(driver);
-		String Name=ex.getexceldatainstring("Sheet1", 10, 0);	
-		//String acctdata=Name;
-		String Pan=ex.getexceldatainstring("Sheet1",10 ,1);
-		String DOB=ex.getexceldatainstring("Sheet1",10,2);
-		String Email=ex.getexceldatainstring("Sheet1",10,3);
-		String Mobile=ex.getexceldatainstring("Sheet1",10,4);
+		//wb.waitForPageLoad(driver);
+		String Name=ex.getexceldatainstring("Sheet1", 13, 0);	
+	
+		String Pan=ex.getexceldatainstring("Sheet1",13 ,1);
+		String DOB=ex.getexceldatainstring("Sheet1",13,2);
+		String Email=ex.getexceldatainstring("Sheet1",13,3);
+		String Mobile=ex.getexceldatainstring("Sheet1",13,4);
 		
 		
 		HomePage hp=new HomePage(driver);
@@ -43,21 +42,22 @@ public class TC_01_OTPVerificationPage extends BaseClass
 		op.emailtext(Email);
 		op.mobile(Mobile);
 		op.openaccbutton();
-		MobileOTPVerificationPage fo=new MobileOTPVerificationPage(driver);
-		String text = fo.getnameofOpenSub();
-	
-		System.out.println(text);
 		
-		Set<String>allwin=driver.getWindowHandles();
-		for(String win:allwin )
-		{
-			driver.switchTo().window(win);
-			title = driver.getTitle();
-			System.out.println(title);
-		}
-		SoftAssert s=new SoftAssert();
-		s.assertEquals(parent, title);
-		System.out.println(getClass().getName()+"\n"+"THIS TEST CASE IS PASSED");	
+		
+		MobileOTPVerificationPage fo=new MobileOTPVerificationPage(driver);
+		
+		fo.getnameofOpenSub();
+		WebElement time = fo.timeout();
+		wb.waitForElementToBeVisible(driver, time);
+		WebElement button = fo.resendOTPButton();
+		//String num = ex.getexceldatainstring("Sheet1",13,7);
+		//fo.otptext(num);
+		
+		SoftAssert s= new SoftAssert();
+		s.assertTrue(button.isEnabled());
+		s.assertAll();
+		
+	
 	}
 
 }
